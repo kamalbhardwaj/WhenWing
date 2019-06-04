@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="42dp"
+                android:onClick="ar"
+                android:text="Appliance Repair"
+                android:textSize="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30sp"
+                app:layout_constraintTop_toBottomOf="@id/text">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/ar1"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/microwave" />
+
+                    <ImageView
+                        android:id="@+id/ar2"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/monitor" />
+
+                    <ImageView
+                        android:id="@+id/ar3"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/services" />
+
+                    <ImageView
+                        android:id="@+id/ar4"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/smartphone" />
+
+                    <ImageView
+                        android:id="@+id/ar5"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/handles" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="35dp"
+                android:onClick="hs"
+                android:text="Home Services"
+                android:textSize="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30sp"
+                app:layout_constraintTop_toBottomOf="@id/text2">
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/hs1"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mason" />
+
+                    <ImageView
+                        android:id="@+id/hs2"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/puja" />
+
+                    <ImageView
+                        android:id="@+id/hs3"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/plumber" />
+
+                    <ImageView
+                        android:id="@+id/hs4"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wood" />
+
+                    <ImageView
+                        android:id="@+id/hs5"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/painter" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="35dp"
+                android:onClick="tp"
+                android:text="Transport"
+                android:textSize="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30sp"
+                app:layout_constraintTop_toBottomOf="@id/text3">
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/tp1"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/buick" />
+
+                    <ImageView
+                        android:id="@+id/tp2"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/coach" />
+
+                    <ImageView
+                        android:id="@+id/tp3"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/truck" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="35dp"
+                android:text="Showroom"
+                android:textSize="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30sp"
+                app:layout_constraintTop_toBottomOf="@id/text4">
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ss1"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/motorbike" />
+
+                    <ImageView
+                        android:id="@+id/ss2"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/foot" />
+
+                    <ImageView
+                        android:id="@+id/ss3"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/foot" />
+
+                    <ImageView
+                        android:id="@+id/ss4"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/necklace" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="35dp"
+                android:text="Wedding/Party"
+                android:textSize="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30sp"
+                app:layout_constraintTop_toBottomOf="@id/text4">
+
+                <LinearLayout
+                    android:id="@+id/linear5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wp1"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/chef" />
+
+                    <ImageView
+                        android:id="@+id/wp2"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/band" />
+
+                    <ImageView
+                        android:id="@+id/wp3"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/makeup" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
